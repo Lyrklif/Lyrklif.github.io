@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    color: #f4f2f5;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    /* Узор */
+    background: 
+    radial-gradient(#3e273b 3px, transparent 4px),
+    radial-gradient(#3e273b 3px, transparent 4px),
+    linear-gradient(#0c2237 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #3e273b 75px, #3e273b 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #3e273b 76px, #3e273b 77px, transparent 78px, transparent 109px), #0c2237;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+a {
+    text-decoration: none; /* Убрать подчёркивание */
+}
+
+ul, ol {
+    list-style-type: none; /* Убрать маркеры спика */
+    padding: 0;
+}
+
+textarea {
+    resize: none; /* Нельзя растягивать поле */
+}
+
+.menu__icon {
+    display: none; /* Не отображать иконку меню */
+}
+
+.gradient__block {
+    margin-top: 3em;
+    
+    background: linear-gradient(to left, rgba(107, 42, 72, 0.6), rgba(52, 43, 90, 0.6));
+    padding: 2em 3em;
+}
+
+/* ********************************************************
+                          HEADER
+************************************************************ */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-column-gap: 3em;
+    
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.present__me h1 {
+    font-weight: 900;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.present__me h1 span {
+    color: #e96396;
+}
+
+.social {
+    width: 2em;
+}
+
+.present__me a img {
+    margin-right: 1em;
+}
+
+.present__me li a {
+    display: flex;
+    align-items: center;
+    
+    font-size: 1.3em;
+}
+
+.photo {
+/*    height: 90%;*/
+    max-width: 100%;
+    height: auto;
+    
+    background-color: #0c2237;
+    
+    align-self: center;
+    
+    border-radius: 100em; 
+    border: 6px solid #5154a5; 
+}
+
+.about__me h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.about__me__text {
+    padding-bottom: 1em;
+}
+
+.about__me__text span {
+    color: #e96396;
+    font-weight: 700;
+}
+
+.about__me p {
+    font-size: 1.3em;
+}
+/* ********************************************************
+                    SKILLS AND HOBBIES
+************************************************************ */
+.skills__and__hobbies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+}
+
+.skills__and__hobbies h2 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.skills h2 {
+    text-align: left;
+}
+
+.hobbies h2 {
+    text-align: right;
+}
+
+.skills__and__hobbies li {
+    font-size: 2em;
+}
+
+.skills {
+    text-align: right;
+}
+
+.skills__and__hobbies ul li{
+    overflow: hidden;
+}
+
+/* Горизонтальные линии рядом с навыками и хобби */
+.skills__and__hobbies ul li:before,
+.skills__and__hobbies ul li:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: .2em;
+    background: #2da975;
+}
+
+.skills__list li:before {
+    margin: 1em 1em 1em 0;
+}
+
+.hollies__list li:after {
+    margin: 1em 0 1em 1em;
+}
+
+.skills__and__hobbies ul li:before {
+    margin-left: -100%;
+}
+
+.skills__and__hobbies ul li:after {
+    margin-right: -100%;
+}
+
+.skills__and__hobbies .line__pink:before,
+.skills__and__hobbies .line__pink:after {
+    background: #da407c;
+}
+
+.skills__and__hobbies .line__purple:before,
+.skills__and__hobbies .line__purple:after {
+    background: #65509d;
+}
+
+/* ********************************************************
+                     PORTFOLIO
+************************************************************ */
+.portfolio__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    
+    font-size: 1.3em;
+}
+
+.portfolio h2 {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.3em;
+}
+
+.portfolio a {
+    font-weight: bold;
+}
+
+.portfolio__content > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio__text h3 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.portfolio__text h3 span {
+    color: #e96396;
+}
+
+.portfolio__text p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ********************************************************
+                       FOOTER
+************************************************************ */
+footer {
+    font-family: 'Open Sans', sans-serif;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    padding: 0 3em;
+}
+
+
+/* ********************************************************
+                       ПРОЧЕЕ
+************************************************************ */
+
+a:hover {
+    color: #e96396;
+}
+
+
+/* ********************************************************
+                       АДАПТИВ
+************************************************************ */
+
+@media screen and (max-width: 1200px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+    header .box3 {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .portfolio__content {
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+    header .box3 {
+        grid-column: 1;
+    }
+    .skills__and__hobbies {
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 12px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
